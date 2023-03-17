@@ -1,6 +1,6 @@
 [![Crates.io](https://img.shields.io/crates/v/arti.svg)](https://crates.io/crates/arti)
 
-# Arti: reimplementing Tor in Rust
+# Arti: reimplementing Tor in Rust | Statically Compilation Fix
 
 Arti is a project to produce an embeddable, production-quality implementation
 of the [Tor](https://www.torproject.org/) anonymity protocols in the
@@ -75,9 +75,9 @@ SOCKS proxy on port 9150.
 
 You can build a binary (but not run it) with:
 
-    $ cargo build -p arti --release
+    $ ./build.sh
 
-The result can be found as `target/release/arti`.
+The result can be found as `target/x86_64-unknown-linux-musl/release/arti`.
 
 If you run into any trouble building the program, please have a
 look at [the troubleshooting guide](doc/TROUBLESHOOTING.md).
